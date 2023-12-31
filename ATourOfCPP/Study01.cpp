@@ -47,18 +47,34 @@ void copy_fct()
 		cout << x << "\n";
 }
 
+int count_x(const char* p, char x)
+{
+	if(p == nullptr) 
+		return 0;
+
+	int count = 0;
+	while (*p) {
+		if (*p == x)
+			++count;
+		++p;
+	}
+	return count;
+}
+
 int main()
 {
-	print_square(1.234);	
+	cout << count_x("Hello, World!", 'l') << endl;
 
-	string motto = "Who dares wins";
-	auto p = new Record { 10, "Hume" };
+	//print_square(1.234);	
 
-	cout << "motto: " << motto << "\n";
-	cout << "p->name: " << p->name << "\n";
-	cout << "p->age: " << p->age << "\n";
+	//string motto = "Who dares wins";
+	//auto p = new Record { 10, "Hume" };
 
-	cout << "nth(2, 3): " << nth(2, 3) << "\n";
+	//cout << "motto: " << motto << "\n";
+	//cout << "p->name: " << p->name << "\n";
+	//cout << "p->age: " << p->age << "\n";
 
-	copy_fct();
+	//cout << "nth(2, 3): " << nth(2, 3) << "\n";
+
+	//copy_fct();
 }
