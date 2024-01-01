@@ -61,9 +61,37 @@ int count_x(const char* p, char x)
 	return count;
 }
 
+bool accept()
+{
+	cout << "계속 할까요?(y/n)\n";
+	char answer = 0;
+
+	cin >> answer;
+	switch (answer)
+	{
+		case 'y':
+			return true;
+		case 'n':
+			return false;
+	default:
+		cout << "거부한 것으로 받아들입니다.\n";
+		return false;
+	}
+	
+}
+
 int main()
 {
 	cout << count_x("Hello, World!", 'l') << endl;
+
+	//if 안에서 선언하는 것은 스코프 제한 (c++17)
+	if (int x = 1; x == 1) {
+		cout << "x: " << x << "\n";
+	}
+
+	int x = 2;
+
+	accept();
 
 	//print_square(1.234);	
 
