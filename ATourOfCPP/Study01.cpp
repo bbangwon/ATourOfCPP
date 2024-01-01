@@ -80,7 +80,7 @@ bool accept()
 	
 }
 
-int main()
+int main_01()
 {
 	cout << count_x("Hello, World!", 'l') << endl;
 
@@ -105,4 +105,6 @@ int main()
 	//cout << "nth(2, 3): " << nth(2, 3) << "\n";
 
 	//copy_fct();
+
+	return 0;
 }
