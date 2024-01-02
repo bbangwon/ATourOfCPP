@@ -49,14 +49,13 @@ namespace Study03
 	}
 }
 
-
-int main()
+int main_03()
 {
 	//cout << Study03::read_and_sum(3) << endl;
 
 	Study03::Vector v(3);
 
-	Study03::Entry e{"entry", 10};
+	Study03::Entry e{ "entry", 10 };
 	e.v2.p = &v;
 
 	Study03::f(&e);
