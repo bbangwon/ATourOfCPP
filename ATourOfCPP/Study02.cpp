@@ -2,34 +2,38 @@
 
 using namespace std;
 
-struct sVector
+namespace Study02
 {
-	int sz;
-	double* elem;
-};
+	struct Vector
+	{
+		int sz;
+		double* elem;
+	};
 
-void vector_init(sVector& v, int s)
-{
-	v.elem = new double[s];
-	v.sz = s;
-}
+	void vector_init(Vector& v, int s)
+	{
+		v.elem = new double[s];
+		v.sz = s;
+	}
 
-double read_and_sum(int s)
-{
-	sVector v;
-	vector_init(v, s);
+	double read_and_sum(int s)
+	{
+		Vector v;
+		vector_init(v, s);
 
-	for(auto i = 0; i < s; i++)
-		cin >> v.elem[i];
+		for (auto i = 0; i < s; i++)
+			cin >> v.elem[i];
 
-	double sum = 0;
-	for(auto i = 0;i < s;i++)
-		sum += v.elem[i];
+		double sum = 0;
+		for (auto i = 0; i < s; i++)
+			sum += v.elem[i];
 
-	return sum;
-}
+		return sum;
+	}
 
-void main_struct()
-{
-	cout << read_and_sum(3) << endl;
+	int main()
+	{
+		cout << read_and_sum(3) << endl;
+		return 0;
+	}
 }

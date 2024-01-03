@@ -29,26 +29,29 @@ namespace Study04
 		default:
 			break;
 		}
+
+		return t;
+	}
+
+	int main()
+	{
+		Study04::Color col = Study04::Color::red;
+
+		Study04::Color col2 = Study04::blue;
+
+		int x = col2;	//int 로 변경하려면 enum
+
+		Study04::TrafficLight light1 = Study04::TrafficLight{ 2 };	//가능하지만 권장하지 않음
+
+		Study04::TrafficLight light2 = Study04::TrafficLight::red;
+
+		++light2;
+
+
+		Study04::Hello::print();
+
+
+		return 0;
 	}
 }
 
-int main()
-{
-	Study04::Color col = Study04::Color::red;
-
-	Study04::Color col2 = Study04::blue;	
-
-	int x = col2;	//int 로 변경하려면 enum
-
-	Study04::TrafficLight light1 = Study04::TrafficLight{ 2 };	//가능하지만 권장하지 않음
-
-	Study04::TrafficLight light2 = Study04::TrafficLight::red;
-
-	++light2;
-
-
-	Study04::Hello::print();
-
-
-	return 0;
-}
