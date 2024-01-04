@@ -129,11 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ModuleVector.ixx" />
     <ClCompile Include="Study01.cpp" />
     <ClCompile Include="Study02.cpp" />
     <ClCompile Include="Study03.cpp" />
     <ClCompile Include="Study04.cpp" />
     <ClCompile Include="Study05.cpp" />
+    <ClCompile Include="Study06.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
