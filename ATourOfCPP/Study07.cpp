@@ -34,5 +34,22 @@ int main()
 		std::cerr << "Unknown error" << std::endl;
 	}
 
+	try 
+	{
+		Vector v(-27);
+	}
+	catch (std::length_error& err)
+	{
+		std::cerr << err.what() << std::endl;
+	}
+	catch (std::bad_alloc& err)
+	{
+		std::cerr << err.what() << std::endl;
+	}
+	catch (...)
+	{
+		std::cerr << "Unknown error" << std::endl;
+	}
+
 	return 0;
 }
