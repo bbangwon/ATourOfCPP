@@ -1,3 +1,4 @@
+#include <stdexcept>
 #include "Vector.h"
 
 Vector::Vector(int s) 
@@ -8,6 +9,9 @@ Vector::Vector(int s)
 
 double& Vector::operator[](int i)
 {
+	if(i < 0 || size() <= i)
+		throw std::out_of_range{"Vector::operator[]"};
+
 	return elem[i];
 }
 

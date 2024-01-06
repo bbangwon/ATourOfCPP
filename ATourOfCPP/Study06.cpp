@@ -15,18 +15,19 @@ namespace Study06
 		}
 		return sum;
 	}
+
+	int main()
+	{
+
+		ModuleVector v(3);
+		v[0] = 1;
+		v[1] = 2;
+		v[2] = 3;
+
+		cout << v.size() << endl;
+		cout << Study06::sqrt_sum(v) << endl;
+
+		return 0;
+	}
 }
 
-int main()
-{
-
-	ModuleVector v(3);
-	v[0] = 1;
-	v[1] = 2;
-	v[2] = 3;
-
-	cout << v.size() << endl;
-	cout << Study06::sqrt_sum(v) << endl;
-
-	return 0;
-}

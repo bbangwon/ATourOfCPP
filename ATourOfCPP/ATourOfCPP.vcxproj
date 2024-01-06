@@ -136,6 +136,7 @@
     <ClCompile Include="Study04.cpp" />
     <ClCompile Include="Study05.cpp" />
     <ClCompile Include="Study06.cpp" />
+    <ClCompile Include="Study07.cpp" />
     <ClCompile Include="Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
